@@ -11,7 +11,7 @@ import java.time.Month;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
+//@RestController
 public class DemoApplication {
 
 	public static void main(String[] args) {
@@ -27,21 +27,4 @@ public class DemoApplication {
 //	public List<String> helloList() {
 //		return List.of("Hello", "World");
 //	}
-
-
-	@GetMapping
-	public List<Student> helloList() {
-		return List.of(
-				new Student(
-						1L,
-						"Ben",
-						"Ben.Chavez@fakemail.com",
-						LocalDate.of(1991, Month.NOVEMBER, 15),
-						32
-
-
-				)
-		);
-	}
-
 }
